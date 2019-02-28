@@ -5,29 +5,39 @@ package rocks.zipcode.io;
  */
 public class Item {
     public Item() {
+        this.id = 0L;
+        this.name = "";
+        this.price = 0.01;
     }
 
+    String name;
+    Long id;
+    Double price;
+
     public Item(Long id, String name, Double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
     }
 
     public String getName() {
-        return null;
+        return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) { this.name = name;
     }
 
     public Long getId() {
-        return null;
+        return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id) {this.id = id;
     }
 
     public Double getPrice() {
-        return null;
+        return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(Double price) {this.price = price;
     }
 }
